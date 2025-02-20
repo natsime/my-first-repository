@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza 🍕</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      img {
+        max-width: 40%;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      hr {
+        margin: 10px 40px;
+      }
+
+      p {
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: left;
+        padding: 10px 40px;
+        line-height: 1.5;
+      }
+
+      a {
+        color: white;
+        font-family: sans-serif;
+        text-align: left;
+        padding: 0 40px;
+        text-decoration: none;
+      }
+
+      button {
+        background-color: white;
+        color: #ff4e50;
+        border: 1px solid white;
+        border-radius: 4px;
+        display: block;
+        margin: 30px auto;
+        padding: 15px 35px;
+        font-size: 28px;
+        font-family: sans-serif;
+        font-weight: bold;
+        box-shadow: -1px 2px 8px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #ff4e50;
+        border: solid 1px #ff4e50;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        background: linear-gradient(
+          109.6deg,
+          rgb(255, 78, 80) 11.2%,
+          rgb(249, 212, 35) 100.2%
+        );
+        border: solid 1px transparent;
+        border-radius: 20px;
+        max-width: 60%;
+        margin: 0 auto;
+      }
+
+      .titleh1 {
+        border: solid 1px white;
+        border-radius: 10px;
+        margin: 30px 40px 10px 40px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titleh1">
+        <h1>I love Pizza</h1>
+      </div>
+      <h2>Only Italian Pizza!</h2>
+      <hr />
+      <img
+        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"
+      />
+      <hr />
+      <p>
+        <strong>Neapolitan pizza</strong> is the version of the round pizza
+        typically prepared in the Italian city of Naples and characterised by a
+        soft, thin dough with high edges. The tomatoes are traditionally either
+        San Marzano tomatoes or pomodorini del Piennolo del Vesuvio, which grow
+        on the volcanic plains to the south of Mount Vesuvius, and the cheese is
+        traditionally mozzarella di bufala campana or fior di latte di Agerola.
+        <br />
+        Pizza napoletana is a traditional speciality guaranteed (TSG) product in
+        the European Union and the United Kingdom, and the art of its making
+        (arte del pizzaiolo napoletano) is included on UNESCO's list of
+        intangible cultural heritage.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Neapolitan_pizza" target="_blank">
+        Read more on <em>Wikipedia</em></a
+      >
+      <button>Get a slice!</button>
+    </div>
+    <script>
+      function tryPizza() {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert("Have some pizza, " + name);
+        } else {
+          alert("No name no pizza for you baby");
+        }
+      }
+      let getSlice = document.querySelector("button");
+      getSlice.addEventListener("click", tryPizza);
+    </script>
+  </body>
+</html>

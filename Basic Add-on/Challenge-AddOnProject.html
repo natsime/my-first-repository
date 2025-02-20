@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga - My new hobby 🧘</title>
+    <style>
+      body {
+        background-color: #f1844c;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #f1844c;
+        color: #f1844c;
+        background: white;
+        font-size: 24px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #f1844c;
+        color: white;
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 18px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-family: sans-serif;
+        text-align: center;
+        display: block;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 10px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 5px 8px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .yoga-first-picture {
+        display: block;
+        margin: 0 auto;
+        border-radius: 15px;
+        transition: all 150ms ease-in-out;
+        max-width: 80%;
+      }
+
+      .yoga-first-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.2);
+      }
+
+      .grid {
+        margin: 15px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        justify-items: center;
+      }
+
+      .grid img {
+        max-width: 250px;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+      .dark {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(0, 0, 0) 0%,
+          rgb(64, 64, 64) 90.2%
+        );
+        color: white;
+      }
+      .dark .container {
+        background-color: rgb(56, 56, 56);
+      }
+
+      .dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>Yoga 🧘</h1>
+      <h2>My new favourite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Yoga"></a>
+      <img
+        src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2202&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        target="_blank"
+        class="yoga-first-picture"
+      />
+      <div class="grid">
+        <img
+          src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          target="_blank"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          target="_blank"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1573384666979-2b1e160d2d08?q=80&w=3039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          target="_blank"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=3020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          target="_blank"
+        />
+      </div>
+      <p>
+        Yoga is a practice that connects the body, breath, and mind. It uses
+        physical postures, breathing exercises, and meditation to improve
+        overall health. Yoga was developed as a spiritual practice thousands of
+        years ago. 🔎📚
+        <a href="https://en.wikipedia.org/wiki/Yoga" target="_blank"
+          >Learn More</a
+        >
+      </p>
+      <button>Learn Yoga</button>
+    </div>
+    <footer>Coded with 🧡 by Nat Simeone</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
